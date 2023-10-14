@@ -1,0 +1,48 @@
+{
+    "name": "nasr/laravel-lang-translatable",
+    "description": "Easy-to-use package To Automatically translate language directory using google translation",
+    "keywords": [
+        "laravel",
+        "Localization",
+        "translaation"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Nasr",
+            "email": "ahmednasr2589@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": ">9",
+        "guzzlehttp/guzzle": "^7.5",
+        "brick/varexporter": "^0.4.0",
+        "stichoza/google-translate-php": "^5.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^9.5.10",
+        "laravel/framework": "^9.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "LLT\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LLT\\LaravelLangTranslatableServiceProvider"
+            ]
+        }
+    }
+}
